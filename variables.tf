@@ -1,12 +1,15 @@
 # Define config variables
-variable "labelPrefix" {
+variable "label_prefix" {
   type        = string
   description = "Your college username. This will form the beginning of various resource names."
 }
 
 variable "region" {
-  default = "westus3"
+  type        = string
+  description = "The cloud region where resources will be deployed. Default is 'westus3'."
+  default     = "westus3"
 }
+
 
 variable "admin_username" {
   type        = string
